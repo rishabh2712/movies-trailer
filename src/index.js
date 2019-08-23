@@ -1,8 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Container from './components/App';
 import * as serviceWorker from './serviceWorker';
+import { ThemeProvider } from '@material-ui/styles';
+import theme from './theme'
+
+
+const App = () => (
+    <React.Fragment>
+        <ThemeProvider theme={theme}>
+            <Container/>
+        </ThemeProvider>
+    </React.Fragment>
+)
+
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

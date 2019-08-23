@@ -1,0 +1,1 @@
+export const LISTAPI = "https://in.bookmyshow.com/serv/getData?cmd=GETTRAILERS&mtype=cs"
