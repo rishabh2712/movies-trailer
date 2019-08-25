@@ -2,7 +2,7 @@
   "name": "book-my-show",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://rishabh2712.github.io/movie-trailers",
+  "homepage": "http://rishabh2712.github.io/movies-trailer",
   "dependencies": {
     "@material-ui/core": "^4.3.3",
     "@material-ui/icons": "^4.2.1",
@@ -17,8 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build && mkdir -p deploy-folder && cp -a build/. ./deploy-folder ",
+    "deploy": "gh-pages -d /deploy-folder"
   },
   "eslintConfig": {
     "extends": "react-app"
