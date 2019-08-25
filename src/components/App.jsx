@@ -41,6 +41,11 @@ const MenuProps = {
 };
 
 const styles = theme => ({
+    title: {
+        color: '#fff',
+        display: 'flex',
+        alignItems: 'center',
+    },
     wrapper: {
         background: theme.palette.background.default,
         color: theme.palette.text.default,
